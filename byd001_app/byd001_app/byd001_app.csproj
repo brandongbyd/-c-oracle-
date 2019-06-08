@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{906CFBBE-55CC-49E6-8D2D-57186C7905CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>byd001_app</RootNamespace>
+    <AssemblyName>byd001_app</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.Web, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common.cs" />
+    <Compile Include="course.cs" />
+    <Compile Include="Form_courseInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_courseInsert.Designer.cs">
+      <DependentUpon>Form_courseInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_courseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_courseQuery.Designer.cs">
+      <DependentUpon>Form_courseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_information_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_information_admin.Designer.cs">
+      <DependentUpon>Form_information_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_information_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_information_student.Designer.cs">
+      <DependentUpon>Form_information_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_information_teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_information_teacher.Designer.cs">
+      <DependentUpon>Form_information_teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MyStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MyStatistics.Designer.cs">
+      <DependentUpon>Form_MyStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scMyQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scMyQuery.Designer.cs">
+      <DependentUpon>Form_scMyQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scMytake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scMytake.Designer.cs">
+      <DependentUpon>Form_scMytake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_courseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_courseUpdate.Designer.cs">
+      <DependentUpon>Form_courseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_courseUpdate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_courseUpdate2.Designer.cs">
+      <DependentUpon>Form_courseUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scUpdate.Designer.cs">
+      <DependentUpon>Form_scUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scUpdate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scUpdate2.Designer.cs">
+      <DependentUpon>Form_scUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scUpdate3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scUpdate3.Designer.cs">
+      <DependentUpon>Form_scUpdate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Statistics.Designer.cs">
+      <DependentUpon>Form_Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_studentInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_studentInsert.Designer.cs">
+      <DependentUpon>Form_studentInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_studentQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_studentQuery.Designer.cs">
+      <DependentUpon>Form_studentQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_studentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_studentUpdate.Designer.cs">
+      <DependentUpon>Form_studentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_studentUpdate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_studentUpdate2.Designer.cs">
+      <DependentUpon>Form_studentUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_teacherInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_teacherInsert.Designer.cs">
+      <DependentUpon>Form_teacherInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_teacherQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_teacherQuery.Designer.cs">
+      <DependentUpon>Form_teacherQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_teacherUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_teacherUpdate.Designer.cs">
+      <DependentUpon>Form_teacherUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_teacherUpdate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_teacherUpdate2.Designer.cs">
+      <DependentUpon>Form_teacherUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sc.cs" />
+    <Compile Include="courseinfo.cs" />
+    <Compile Include="student.cs" />
+    <Compile Include="studentinfo.cs" />
+    <Compile Include="teacher.cs" />
+    <EmbeddedResource Include="Form_courseInsert.resx">
+      <DependentUpon>Form_courseInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_courseQuery.resx">
+      <DependentUpon>Form_courseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_information_admin.resx">
+      <DependentUpon>Form_information_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_information_student.resx">
+      <DependentUpon>Form_information_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_information_teacher.resx">
+      <DependentUpon>Form_information_teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MyStatistics.resx">
+      <DependentUpon>Form_MyStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scMyQuery.resx">
+      <DependentUpon>Form_scMyQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scMytake.resx">
+      <DependentUpon>Form_scMytake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_courseUpdate.resx">
+      <DependentUpon>Form_courseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_courseUpdate2.resx">
+      <DependentUpon>Form_courseUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scUpdate.resx">
+      <DependentUpon>Form_scUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scUpdate2.resx">
+      <DependentUpon>Form_scUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scUpdate3.resx">
+      <DependentUpon>Form_scUpdate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Statistics.resx">
+      <DependentUpon>Form_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_studentInsert.resx">
+      <DependentUpon>Form_studentInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_studentQuery.resx">
+      <DependentUpon>Form_studentQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_studentUpdate.resx">
+      <DependentUpon>Form_studentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_studentUpdate2.resx">
+      <DependentUpon>Form_studentUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_teacherInsert.resx">
+      <DependentUpon>Form_teacherInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_teacherQuery.resx">
+      <DependentUpon>Form_teacherQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_teacherUpdate.resx">
+      <DependentUpon>Form_teacherUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_teacherUpdate2.resx">
+      <DependentUpon>Form_teacherUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\course.datasource" />
+    <None Include="Properties\DataSources\courseinfo.datasource" />
+    <None Include="Properties\DataSources\sc.datasource" />
+    <None Include="Properties\DataSources\student.datasource" />
+    <None Include="Properties\DataSources\studentinfo.datasource" />
+    <None Include="Properties\DataSources\teacher.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
